@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: Kazare
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://<url>:<port>/<db_name>
+    username: <username>
+    password: <password>
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: none
